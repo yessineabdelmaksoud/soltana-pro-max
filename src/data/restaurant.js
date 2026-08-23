@@ -5,7 +5,7 @@ export const restaurant = {
   address: "Devant Café Zezwa, Route de Tunis KM1, Sfax",
   city: "Sfax, Tunisia",
   hours: null,
-  instagram: "",
+  instagram: "https://www.instagram.com/resto.soltana_pro_max/",
   facebook: "",
   maps: "",
 };
