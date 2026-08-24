@@ -543,7 +543,7 @@ h2 em { color: var(--red); font-style: normal; }
 .food-card { position: relative; overflow: hidden; background: var(--warm-white); }
 .food-card__image { overflow: hidden; background: #dccbbd; }
 .food-card__image img { width: 100%; height: 100%; min-height: 16rem; object-fit: cover; transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1); }
-.food-card__caption { display: grid; grid-template-columns: auto 1fr auto; gap: 0.9rem; align-items: start; min-height: 7.5rem; padding: 1rem; border-top: 4px solid var(--red); }
+.food-card__caption { display: grid; grid-template-columns: auto 1fr; gap: 0.9rem; align-items: start; min-height: 7.5rem; padding: 1rem; border-top: 4px solid var(--red); }
 .food-card__caption > span { color: var(--red); font-size: 0.7rem; font-weight: 700; }
 .food-card h3 { margin: -0.08em 0 0; font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.035em; line-height: 0.95; text-transform: uppercase; transition: transform 220ms ease; }
 .food-card p { margin: 0.35rem 0 0; color: var(--ink-muted); font-size: 0.9rem; }

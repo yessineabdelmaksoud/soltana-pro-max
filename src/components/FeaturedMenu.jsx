@@ -42,7 +42,6 @@ export function FeaturedMenu() {
             <div className="food-card__caption">
               <span>{number}</span>
               <div><h3>{item.category}</h3><p>{item.note}</p></div>
-              <Icon name="arrow" />
             </div>
           </motion.article>
           );
