@@ -4,9 +4,9 @@ import { reveal, viewport } from "../motion/variants";
 import { Icon } from "./Icons";
 
 const socialFrames = [
-  ["/assets/image copy 10.png", "Plat tunisien aux boulettes, haricots et piments", "POV: jit jou3an"],
+  ["/assets/chorba-bowl.jpg", "Chorba tunisienne au citron, bouillon rouge et langues d’oiseau", "POV: jit jou3an"],
   ["/assets/team.jpeg", "Chouliga Junior au centre de l’univers Soltana", "the main character"],
-  ["/assets/image copy 15.png", "Plat tunisien généreux avec viande et pois chiches", "banna, sans filtre"],
+  ["/assets/slata-verte.jpg", "Slata mechouia verte au thon, œufs durs et olives", "banna, sans filtre"],
 ];
 
 export function SocialSection() {

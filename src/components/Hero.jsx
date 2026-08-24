@@ -31,13 +31,14 @@ export function Hero() {
           <span>MAHOUCH RESTO.</span>
           <strong>HEDHI SOLTANA.</strong>
         </h1>
-        <p className="hero__lead">El banna, el quality wel soum. W enti chouf rouhek.</p>
+        <p className="hero__lead">El Benna, Qualité w soum w Entiii chouf rouhek !</p>
+        <p className="hero__tagline"><bdi lang="ar" dir="rtl">موش كان تاكل... تعيش التجربة</bdi> <span aria-hidden="true">🔥</span></p>
         <div className="hero__actions">
           <a className="button button--cream" href="#menu">Chouf el menu <Icon name="arrow" /></a>
-          <a className="button button--outline-light" href="#location">Win nal9awkom? <Icon name="map" /></a>
+          <a className="button button--outline-light" href="#location"><bdi lang="ar" dir="rtl">وين تلقاونا؟</bdi> <Icon name="map" /></a>
         </div>
-        <div className="hero__stamp" aria-label="Sfax, kilomètre 1">
-          <b>SFAX</b><span>KM1 · KM1 · KM1</span>
+        <div className="hero__stamp" aria-label="Route de Tunis KM1, Sfax">
+          <b>SFAX</b><span>ROUTE DE TUNIS KM1</span>
         </div>
       </motion.div>
 

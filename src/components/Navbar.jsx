@@ -7,7 +7,7 @@ const links = [
   ["Menu", "#menu"],
   ["Soltana", "#soltana"],
   ["Gallery", "#gallery"],
-  ["Win nal9awkom?", "#location"],
+  ["وين تلقاونا؟", "#location", true],
   ["Contact", `tel:${restaurant.phone}`],
 ];
 
@@ -42,10 +42,12 @@ export function Navbar() {
           <span>SOLTANA <b>PRO MAX</b></span>
         </a>
         <div className="navbar__links">
-          {links.slice(0, 4).map(([label, href]) => <a key={label} href={href}>{label}</a>)}
+          {links.slice(0, 4).map(([label, href, isRtl]) => (
+            <a key={label} href={href} lang={isRtl ? "ar" : undefined} dir={isRtl ? "rtl" : undefined}>{label}</a>
+          ))}
         </div>
         <a className="button button--small button--dark navbar__call" href={`tel:${restaurant.phone}`}>
-          Call us <Icon name="phone" size={17} />
+          <bdi lang="ar" dir="rtl">كلمونا</bdi> <Icon name="phone" size={17} />
         </a>
         <button
           className="navbar__toggle"
@@ -68,16 +70,16 @@ export function Navbar() {
             exit={{ clipPath: "inset(0 0 100% 0)" }}
             transition={{ duration: 0.42, ease: [0.76, 0, 0.24, 1] }}
           >
-            <span className="micro-label">SFAX — KM1</span>
+            <span className="micro-label">ROUTE DE TUNIS KM1 — SFAX</span>
             <div className="mobile-menu__links">
-              {links.map(([label, href], index) => (
+              {links.map(([label, href, isRtl], index) => (
                 <a
                   key={label}
                   href={href}
                   ref={index === 0 ? firstLink : null}
                   onClick={() => setOpen(false)}
                 >
-                  <span>0{index + 1}</span>{label}
+                  <span>0{index + 1}</span><bdi lang={isRtl ? "ar" : undefined} dir={isRtl ? "rtl" : undefined}>{label}</bdi>
                 </a>
               ))}
             </div>

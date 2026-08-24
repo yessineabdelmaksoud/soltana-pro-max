@@ -3,13 +3,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Icon } from "./Icons";
 
 const gallery = [
-  ["/assets/image.png", "Soupe tunisienne rouge servie avec du pain"],
-  ["/assets/image copy 16.png", "Plat tunisien vert servi avec viande et piment"],
-  ["/assets/image copy 9.png", "Ragoût tunisien aux haricots, viande et piments rouges"],
-  ["/assets/food6.jpg", "Slata méchouia garnie de thon, olives et œufs"],
-  ["/assets/image copy 13.png", "Plat tunisien en sauce aux légumes"],
-  ["/assets/image copy 18.png", "Plat traditionnel tunisien en sauce"],
-  ["/assets/food2.jpg", "Poulet tunisien en sauce aux petits pois"],
+  ["/assets/jelbena.jpg", "Jelbena tunisienne, ragoût de petits pois en sauce rouge"],
+  ["/assets/chroba.jpg", "Chorba tunisienne, soupe rouge relevée"],
+  ["/assets/kafteji.jpg", "Kafteji tunisien, légumes frits hachés à l’œuf"],
+  ["/assets/brik.jpg", "Brik tunisienne croustillante à l’œuf"],
+  ["/assets/sandwich.jpg", "Sandwich tunisien garni"],
+  ["/assets/poulet.jpg", "Poulet grillé façon Soltana"],
+  ["/assets/djej-mechwi.jpg", "Djej mechwi, poulet grillé tunisien"],
 ];
 
 export function Gallery() {

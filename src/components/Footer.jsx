@@ -9,7 +9,7 @@ export function Footer() {
         <span className="footer__mark">Y!</span>
       </div>
       <div className="footer__bottom">
-        <p>SFAX — KM1</p>
+        <p>ROUTE DE TUNIS KM1 — SFAX</p>
         <div className="footer__links">
           <a href={`tel:${restaurant.phone}`}>Phone <Icon name="arrow" size={16} /></a>
           {restaurant.instagram && <a href={restaurant.instagram}>Instagram <Icon name="arrow" size={16} /></a>}

@@ -24,7 +24,10 @@ export function FeaturedMenu() {
         {menuCategories.map((category, index) => <span key={category}><b>0{index + 1}</b>{category}</span>)}
       </div>
       <motion.div className="food-grid" variants={stagger} initial="hidden" whileInView="visible" viewport={viewport}>
-        {featuredFood.map((item, index) => (
+        {featuredFood.map((item, index) => {
+          const position = menuCategories.indexOf(item.category);
+          const number = String(position < 0 ? index + 1 : position + 1).padStart(2, "0");
+          return (
           <motion.article className={`food-card food-card--${item.layout}`} variants={reveal} key={`${item.category}-${index}`}>
             <div className="food-card__image">
               <img
@@ -37,12 +40,13 @@ export function FeaturedMenu() {
               />
             </div>
             <div className="food-card__caption">
-              <span>0{index + 1}</span>
+              <span>{number}</span>
               <div><h3>{item.category}</h3><p>{item.note}</p></div>
               <Icon name="arrow" />
             </div>
           </motion.article>
-        ))}
+          );
+        })}
       </motion.div>
     </section>
   );

@@ -9,7 +9,7 @@ export function SoltanaLanguage() {
   return (
     <section className="language" id="soltana" aria-labelledby="language-title">
       <div className="language__header">
-        <span className="micro-label">02 / EL LOU8A</span>
+        <span className="micro-label">02 / EL LOUGHA</span>
         <h2 id="language-title">Soltana ma tetfassarech.<br /><em>Tet3ach.</em></h2>
       </div>
       <div className="language__stage">
@@ -24,7 +24,7 @@ export function SoltanaLanguage() {
               onFocus={() => setActive(index)}
               onClick={() => setActive(index)}
             >
-              <span>0{index + 1}</span>{item.word}
+              <span>0{index + 1}</span><bdi lang={item.isRtl ? "ar" : undefined} dir={item.isRtl ? "rtl" : undefined}>{item.word}</bdi>
             </button>
           ))}
         </div>
@@ -34,6 +34,7 @@ export function SoltanaLanguage() {
               key={phrase.image}
               src={phrase.image}
               alt=""
+              style={phrase.focus ? { objectPosition: phrase.focus } : undefined}
               loading="lazy"
               decoding="async"
               initial={{ opacity: 0, scale: 1.05, clipPath: "inset(0 0 100% 0)" }}
@@ -43,7 +44,7 @@ export function SoltanaLanguage() {
             />
           </AnimatePresence>
           <span>{phrase.tag}</span>
-          <strong>{phrase.word}</strong>
+          <strong><bdi lang={phrase.isRtl ? "ar" : undefined} dir={phrase.isRtl ? "rtl" : undefined}>{phrase.word}</bdi></strong>
         </div>
       </div>
     </section>

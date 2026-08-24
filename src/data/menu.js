@@ -5,36 +5,37 @@ export const menuCategories = [
   "Pâtes",
   "Plats tunisiens",
   "Specials",
+  "Du jour",
 ];
 
 // No prices are shown because the supplied menu PDF is an unrelated sample.
 export const featuredFood = [
   {
     category: "Plats tunisiens",
-    note: "Elli yefhem fil mar9a, yefhem.",
-    image: "/assets/image copy 14.png",
-    alt: "Plat tunisien en sauce garni de poulet et de légumes",
+    note: "Elli yefhem fil Jelbenaa, yefhem.",
+    image: "/assets/jelbena.jpg",
+    alt: "Jelbena tunisienne, ragoût de petits pois en sauce rouge",
     layout: "large",
   },
   {
     category: "Poulet",
     note: "Bnin. Point final.",
-    image: "/assets/food2.jpg",
-    alt: "Plat de poulet tunisien en sauce avec petits pois et piments",
+    image: "/assets/poulet.jpg",
+    alt: "Poulet grillé façon Soltana",
     layout: "portrait",
   },
   {
     category: "Specials",
-    note: "Es2elna chnowa tayeb el youm.",
-    image: "/assets/image copy 15.png",
-    alt: "Plat tunisien généreux garni de viande, pois chiches et herbes",
+    note: "Es2elna chnouwa tayeb el youm.",
+    image: "/assets/s7an-tounsi.jpg",
+    alt: "S7an tounsi, assiette tunisienne complète",
     layout: "small",
   },
   {
     category: "Du jour",
-    note: "Ali khal9a dayra.",
-    image: "/assets/food6.jpg",
-    alt: "Plat tunisien de légumes grillés, thon, olives et œufs",
+    note: "Ali khlegua Deyraa.",
+    image: "/assets/mechouia.jpg",
+    alt: "Salade mechouia tunisienne au thon, olives et œufs",
     layout: "wide",
   },
 ];
